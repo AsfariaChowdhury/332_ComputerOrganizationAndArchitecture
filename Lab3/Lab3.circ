@@ -202,10 +202,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1180,380)" to="(1270,380)"/>
     <wire from="(1140,350)" to="(1550,350)"/>
     <wire from="(680,260)" to="(1270,260)"/>
-    <comp lib="0" loc="(180,50)" name="Pin">
+    <comp lib="0" loc="(600,300)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="4" loc="(1150,140)" name="D Flip-Flop">
+      <a name="label" val="F4"/>
+    </comp>
+    <comp lib="0" loc="(430,50)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="I4"/>
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="2" loc="(780,640)" name="Multiplexer">
+      <a name="select" val="2"/>
     </comp>
     <comp lib="4" loc="(1150,600)" name="D Flip-Flop">
       <a name="label" val="F1"/>
@@ -213,42 +222,34 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="2" loc="(780,320)" name="Multiplexer">
       <a name="select" val="2"/>
     </comp>
-    <comp lib="0" loc="(360,50)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="11"/>
-    </comp>
-    <comp lib="2" loc="(780,480)" name="Multiplexer">
-      <a name="select" val="2"/>
-    </comp>
-    <comp lib="0" loc="(1280,290)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="A3"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="0" loc="(1280,140)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="A4"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="4" loc="(1150,440)" name="D Flip-Flop">
-      <a name="label" val="F2"/>
-    </comp>
-    <comp lib="0" loc="(240,50)" name="Pin">
+    <comp lib="0" loc="(1620,60)" name="Clock">
       <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="I3"/>
+      <a name="label" val="CLK"/>
     </comp>
-    <comp lib="2" loc="(780,640)" name="Multiplexer">
-      <a name="select" val="2"/>
+    <comp lib="0" loc="(820,30)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="shift right"/>
+    </comp>
+    <comp lib="0" loc="(920,690)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="shift left"/>
     </comp>
     <comp lib="0" loc="(1280,440)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="A2"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(780,480)" name="Multiplexer">
+      <a name="select" val="2"/>
     </comp>
     <comp lib="0" loc="(490,50)" name="Pin">
       <a name="facing" val="south"/>
@@ -260,47 +261,46 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="CLR"/>
     </comp>
-    <comp lib="0" loc="(600,300)" name="Splitter">
-      <a name="facing" val="west"/>
+    <comp lib="2" loc="(780,170)" name="Multiplexer">
+      <a name="select" val="2"/>
     </comp>
-    <comp lib="0" loc="(920,690)" name="Pin">
+    <comp lib="0" loc="(1280,290)" name="Pin">
       <a name="facing" val="west"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="shift left"/>
+      <a name="output" val="true"/>
+      <a name="label" val="A3"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(430,50)" name="Pin">
+    <comp lib="4" loc="(1150,290)" name="D Flip-Flop">
+      <a name="label" val="F3"/>
+    </comp>
+    <comp lib="0" loc="(180,50)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="S1"/>
+      <a name="label" val="I4"/>
+    </comp>
+    <comp lib="0" loc="(240,50)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="I3"/>
+    </comp>
+    <comp lib="0" loc="(360,50)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="11"/>
+    </comp>
+    <comp lib="4" loc="(1150,440)" name="D Flip-Flop">
+      <a name="label" val="F2"/>
     </comp>
     <comp lib="0" loc="(300,50)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="I2"/>
     </comp>
-    <comp lib="0" loc="(1620,60)" name="Clock">
-      <a name="facing" val="south"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="4" loc="(1150,290)" name="D Flip-Flop">
-      <a name="label" val="F3"/>
-    </comp>
     <comp lib="0" loc="(1290,600)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="A1"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(780,170)" name="Multiplexer">
-      <a name="select" val="2"/>
-    </comp>
-    <comp lib="0" loc="(820,30)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="shift right"/>
-    </comp>
-    <comp lib="4" loc="(1150,140)" name="D Flip-Flop">
-      <a name="label" val="F4"/>
     </comp>
   </circuit>
 </project>
