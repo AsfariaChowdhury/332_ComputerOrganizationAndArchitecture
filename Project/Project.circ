@@ -88,11 +88,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="OPcode"/>
     </tool>
     <tool lib="0" name="Pin">
-      <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="3"/>
-      <a name="label" val="ALUop"/>
-      <a name="labelloc" val="east"/>
+      <a name="label" val="Ld/MemWrite"/>
     </tool>
     <tool lib="1" name="NOT Gate"/>
     <tool lib="1" name="AND Gate">
@@ -101,6 +98,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="inputs" val="2"/>
     </tool>
     <tool lib="1" name="OR Gate">
+      <a name="facing" val="west"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </tool>
@@ -970,88 +968,130 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="#c8ff31" height="380" stroke="#000000" stroke-width="2" width="182" x="329" y="90"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="367" y="175">Mem2Reg</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="360" y="205">ALUsrc</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="361" y="234">RegDst</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="377" y="264">Str/MemRead</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="375" y="295">Ld/MemWrite</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="422" y="109">OPcode</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="488" y="344">Binv</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="493" y="374">Cin</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="483" y="433">ALUop</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="477" y="403">WriteReg</text>
+      <circ-port height="8" pin="620,320" width="8" x="416" y="86"/>
+      <circ-port height="10" pin="670,390" width="10" x="325" y="165"/>
+      <circ-port height="10" pin="490,600" width="10" x="325" y="195"/>
+      <circ-port height="10" pin="530,770" width="10" x="325" y="225"/>
+      <circ-port height="10" pin="620,920" width="10" x="325" y="255"/>
+      <circ-port height="10" pin="630,980" width="10" x="325" y="285"/>
+      <circ-port height="10" pin="980,350" width="10" x="505" y="335"/>
+      <circ-port height="10" pin="980,400" width="10" x="505" y="365"/>
+      <circ-port height="10" pin="1110,510" width="10" x="505" y="395"/>
+      <circ-port height="10" pin="1340,710" width="10" x="505" y="425"/>
+      <circ-anchor facing="east" height="6" width="6" x="507" y="87"/>
+    </appear>
     <wire from="(740,490)" to="(740,820)"/>
+    <wire from="(820,340)" to="(820,610)"/>
     <wire from="(810,880)" to="(1250,880)"/>
     <wire from="(990,830)" to="(990,840)"/>
-    <wire from="(1250,730)" to="(1250,880)"/>
     <wire from="(720,340)" to="(720,470)"/>
-    <wire from="(820,340)" to="(820,730)"/>
     <wire from="(800,710)" to="(1050,710)"/>
-    <wire from="(720,470)" to="(1040,470)"/>
-    <wire from="(730,640)" to="(1050,640)"/>
+    <wire from="(780,530)" to="(780,600)"/>
+    <wire from="(850,340)" to="(850,1050)"/>
     <wire from="(810,560)" to="(810,880)"/>
     <wire from="(1300,710)" to="(1340,710)"/>
+    <wire from="(820,920)" to="(820,1050)"/>
     <wire from="(1130,650)" to="(1130,680)"/>
+    <wire from="(720,470)" to="(720,1050)"/>
     <wire from="(810,340)" to="(810,560)"/>
-    <wire from="(780,690)" to="(780,910)"/>
-    <wire from="(620,320)" to="(720,320)"/>
-    <wire from="(1040,660)" to="(1040,670)"/>
-    <wire from="(1000,540)" to="(1000,560)"/>
-    <wire from="(800,830)" to="(800,910)"/>
-    <wire from="(740,340)" to="(740,490)"/>
+    <wire from="(780,690)" to="(780,780)"/>
     <wire from="(740,490)" to="(1040,490)"/>
     <wire from="(770,350)" to="(770,520)"/>
-    <wire from="(1130,650)" to="(1210,650)"/>
-    <wire from="(990,840)" to="(1010,840)"/>
-    <wire from="(770,680)" to="(770,910)"/>
+    <wire from="(730,480)" to="(730,590)"/>
     <wire from="(780,530)" to="(1040,530)"/>
-    <wire from="(1050,660)" to="(1210,660)"/>
-    <wire from="(1050,700)" to="(1210,700)"/>
-    <wire from="(760,340)" to="(760,910)"/>
-    <wire from="(750,660)" to="(750,910)"/>
+    <wire from="(730,640)" to="(730,760)"/>
     <wire from="(800,710)" to="(800,830)"/>
+    <wire from="(820,610)" to="(820,730)"/>
     <wire from="(770,350)" to="(900,350)"/>
-    <wire from="(780,340)" to="(780,530)"/>
-    <wire from="(840,340)" to="(840,910)"/>
-    <wire from="(860,340)" to="(860,910)"/>
-    <wire from="(740,820)" to="(1010,820)"/>
+    <wire from="(770,680)" to="(770,1050)"/>
+    <wire from="(780,340)" to="(780,390)"/>
     <wire from="(900,400)" to="(980,400)"/>
     <wire from="(1260,690)" to="(1280,690)"/>
     <wire from="(770,340)" to="(770,350)"/>
     <wire from="(730,480)" to="(1040,480)"/>
-    <wire from="(1050,640)" to="(1050,660)"/>
     <wire from="(1060,710)" to="(1060,730)"/>
-    <wire from="(730,640)" to="(730,910)"/>
+    <wire from="(600,780)" to="(780,780)"/>
     <wire from="(1040,670)" to="(1210,670)"/>
-    <wire from="(730,340)" to="(730,480)"/>
-    <wire from="(1070,510)" to="(1110,510)"/>
-    <wire from="(1240,680)" to="(1280,680)"/>
-    <wire from="(1260,690)" to="(1260,720)"/>
-    <wire from="(1270,700)" to="(1270,730)"/>
-    <wire from="(810,560)" to="(1000,560)"/>
-    <wire from="(800,830)" to="(990,830)"/>
-    <wire from="(740,820)" to="(740,910)"/>
-    <wire from="(810,880)" to="(810,910)"/>
+    <wire from="(840,340)" to="(840,1050)"/>
+    <wire from="(780,980)" to="(780,1050)"/>
+    <wire from="(750,660)" to="(750,1050)"/>
+    <wire from="(760,340)" to="(760,1050)"/>
     <wire from="(770,680)" to="(1130,680)"/>
-    <wire from="(750,500)" to="(1040,500)"/>
-    <wire from="(750,660)" to="(1040,660)"/>
     <wire from="(1000,540)" to="(1040,540)"/>
+    <wire from="(670,390)" to="(780,390)"/>
     <wire from="(1050,700)" to="(1050,710)"/>
-    <wire from="(800,550)" to="(1040,550)"/>
-    <wire from="(820,730)" to="(1060,730)"/>
     <wire from="(800,340)" to="(800,550)"/>
-    <wire from="(780,690)" to="(1210,690)"/>
-    <wire from="(1270,700)" to="(1280,700)"/>
-    <wire from="(1040,830)" to="(1240,830)"/>
+    <wire from="(560,590)" to="(730,590)"/>
+    <wire from="(810,880)" to="(810,1050)"/>
     <wire from="(750,340)" to="(750,500)"/>
-    <wire from="(730,480)" to="(730,640)"/>
     <wire from="(750,500)" to="(750,660)"/>
     <wire from="(770,520)" to="(770,680)"/>
-    <wire from="(780,530)" to="(780,690)"/>
     <wire from="(800,550)" to="(800,710)"/>
-    <wire from="(720,470)" to="(720,910)"/>
-    <wire from="(790,340)" to="(790,910)"/>
-    <wire from="(830,340)" to="(830,910)"/>
-    <wire from="(850,340)" to="(850,910)"/>
-    <wire from="(870,340)" to="(870,910)"/>
-    <wire from="(820,730)" to="(820,910)"/>
+    <wire from="(820,730)" to="(820,920)"/>
     <wire from="(1060,710)" to="(1210,710)"/>
-    <wire from="(900,350)" to="(980,350)"/>
     <wire from="(1240,720)" to="(1240,830)"/>
     <wire from="(770,520)" to="(1040,520)"/>
     <wire from="(900,350)" to="(900,400)"/>
     <wire from="(1240,720)" to="(1260,720)"/>
     <wire from="(1250,730)" to="(1270,730)"/>
+    <wire from="(1250,730)" to="(1250,880)"/>
+    <wire from="(790,340)" to="(790,1050)"/>
+    <wire from="(830,340)" to="(830,1050)"/>
+    <wire from="(720,470)" to="(1040,470)"/>
+    <wire from="(730,640)" to="(1050,640)"/>
+    <wire from="(870,340)" to="(870,1050)"/>
+    <wire from="(800,830)" to="(800,1050)"/>
+    <wire from="(620,320)" to="(720,320)"/>
+    <wire from="(1040,660)" to="(1040,670)"/>
+    <wire from="(1000,540)" to="(1000,560)"/>
+    <wire from="(740,340)" to="(740,490)"/>
+    <wire from="(490,600)" to="(530,600)"/>
+    <wire from="(1130,650)" to="(1210,650)"/>
+    <wire from="(990,840)" to="(1010,840)"/>
+    <wire from="(560,600)" to="(780,600)"/>
+    <wire from="(1050,660)" to="(1210,660)"/>
+    <wire from="(1050,700)" to="(1210,700)"/>
+    <wire from="(620,920)" to="(820,920)"/>
+    <wire from="(560,610)" to="(820,610)"/>
+    <wire from="(600,760)" to="(730,760)"/>
+    <wire from="(740,820)" to="(1010,820)"/>
+    <wire from="(730,590)" to="(730,640)"/>
+    <wire from="(1050,640)" to="(1050,660)"/>
+    <wire from="(780,780)" to="(780,980)"/>
+    <wire from="(730,340)" to="(730,480)"/>
+    <wire from="(780,390)" to="(780,530)"/>
+    <wire from="(1070,510)" to="(1110,510)"/>
+    <wire from="(1240,680)" to="(1280,680)"/>
+    <wire from="(860,340)" to="(860,1050)"/>
+    <wire from="(1260,690)" to="(1260,720)"/>
+    <wire from="(1270,700)" to="(1270,730)"/>
+    <wire from="(810,560)" to="(1000,560)"/>
+    <wire from="(800,830)" to="(990,830)"/>
+    <wire from="(530,770)" to="(570,770)"/>
+    <wire from="(750,500)" to="(1040,500)"/>
+    <wire from="(750,660)" to="(1040,660)"/>
+    <wire from="(780,600)" to="(780,690)"/>
+    <wire from="(800,550)" to="(1040,550)"/>
+    <wire from="(820,730)" to="(1060,730)"/>
+    <wire from="(780,690)" to="(1210,690)"/>
+    <wire from="(630,980)" to="(780,980)"/>
+    <wire from="(1270,700)" to="(1280,700)"/>
+    <wire from="(1040,830)" to="(1240,830)"/>
+    <wire from="(730,760)" to="(730,1050)"/>
+    <wire from="(740,820)" to="(740,1050)"/>
+    <wire from="(900,350)" to="(980,350)"/>
     <comp lib="0" loc="(980,400)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -1064,16 +1104,23 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="WriteReg"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="1" loc="(530,600)" name="OR Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(490,600)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="ALUsrc"/>
+    </comp>
     <comp lib="0" loc="(620,320)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
       <a name="label" val="OPcode"/>
     </comp>
-    <comp lib="0" loc="(980,350)" name="Pin">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(530,770)" name="Pin">
       <a name="output" val="true"/>
-      <a name="label" val="Binv"/>
-      <a name="labelloc" val="east"/>
+      <a name="label" val="RegDst"/>
     </comp>
     <comp lib="1" loc="(1070,510)" name="OR Gate">
       <a name="size" val="30"/>
@@ -1103,6 +1150,29 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="1" loc="(1240,680)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="6"/>
+    </comp>
+    <comp lib="0" loc="(670,390)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="Mem2Reg"/>
+    </comp>
+    <comp lib="0" loc="(630,980)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="Ld/MemWrite"/>
+    </comp>
+    <comp lib="0" loc="(980,350)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Binv"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(570,770)" name="OR Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(620,920)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="Str/MemRead"/>
     </comp>
   </circuit>
 </project>
