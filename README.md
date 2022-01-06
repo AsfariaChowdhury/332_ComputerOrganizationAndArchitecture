@@ -1,2 +1,2 @@
 # 332_ComputerOrganizationAndArchitecture
- Here, all lab reports are stored, and other miscelleneous files.
+ Here, all project files and lab reports are stored, and other miscelleneous files.
